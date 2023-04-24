@@ -35,7 +35,7 @@ function Joinus() {
   }
 
   function captUserName(e) {
-    setUserName(e.target.value); //first check e byub makin condition
+    setUserName(e.target.value);  
     const userRegEx = /\s/g;
     if (userRegEx.test(!userName)) {
       setUS("");
@@ -60,7 +60,6 @@ function Joinus() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    //===================email
     function emailExists(email) {
       for (let i = 0; i < data.length; i++) {
         if (data[i].Email === email) {
@@ -72,7 +71,7 @@ function Joinus() {
 
     if (emailExists(email)) {
       alert("Email is already exist");
-      // navigate("../Login");
+    
     } else if (email === "" || userName === "" || password === "") {
       alert("please enter something");
     } else if (
@@ -115,9 +114,6 @@ function Joinus() {
       <form onSubmit={handleSubmit}>
         <div className="outer">
           <div className="img">
-            {/* <div className='containerImg'> */}
-            {/* <img style={{borderRadius:'60%',height:'auto',width:'30%'}} className='profile' src={profile} alt="profile" />
-            </div> */}
           </div>
           <input
             className="user"

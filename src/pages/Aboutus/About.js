@@ -4,7 +4,6 @@ import "./about.css";
 import Pricing from "./Pricing/Pricing";
 import Program from "./program/Program";
 import MeetOurTeam from "./Trainer/MeetOurTeam";
-// import Trainer from "./Trainer/Trainer";
 
 function About() {
   return (
